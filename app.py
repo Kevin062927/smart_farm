@@ -24,6 +24,6 @@ if st.button("예측 실행"):
     hum_pred = hum_model.predict(input_df)[0]
 
     st.subheader("📈 예측 결과")
-    st.metric("🌡 최고 기온 (°C)", f"{temp_pred:.1f}")
+    st.metric("🌡 평균 기온 (°C)", f"{temp_pred:.1f}")
     st.metric("🌧 강수량 (mm)", f"{rain_pred:.1f}")
     st.metric("💧 습도 (%)", f"{hum_pred:.1f}")
